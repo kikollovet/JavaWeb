@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calculadora Web</h1>
+        <h4>Insira os números e escolha o tipo de operação</h4>
+        <form action="calcular">
+            <input type="text" name="v1"/>
+            <select name="tipoOperacao" id="to">
+		<option value="soma">+</option>
+		<option value="subtracao">-</option>
+                <option value="multiplicacao">*</option>
+                <option value="divisao">/</option>
+            </select>
+            <input type="text" name="v2"/>
+            <input type="submit" value="Calcular"/>
+        </form>
+    </body>
+</html>
