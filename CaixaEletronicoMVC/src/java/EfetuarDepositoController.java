@@ -20,6 +20,6 @@ public class EfetuarDepositoController extends HttpServlet {
         }
         ((Conta)request.getSession().getAttribute("conta")).depositar(valor);
         
-        request.getRequestDispatcher("central.jsp").forward(request, response);
+        response.sendRedirect("central.jsp");
     }
 }
