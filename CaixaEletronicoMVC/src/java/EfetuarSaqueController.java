@@ -18,7 +18,7 @@ public class EfetuarSaqueController extends HttpServlet {
         
         ((Conta)request.getSession().getAttribute("conta")).sacar(valor);
         
-        request.getRequestDispatcher("central.jsp").forward(request, response);
+        response.sendRedirect("central.jsp");
     }
 
 }
